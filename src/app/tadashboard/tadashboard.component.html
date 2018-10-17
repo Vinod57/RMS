@@ -1,0 +1,116 @@
+<div class="wrapper">
+	<!--  Header -->
+	<div class="container-fluid header"> 
+		<div class="row header_block">
+			<div class="heading-block activity_logo col-md-4 col-sm-6 col-xs-6">
+				<div class="header_logo"></div>
+			</div>
+			<!-- <span class="header_banner"></span>  -->
+			<div class="heading-block activity_title col-md-4 col-sm-6 col-xs-6">Recruitment Management System</div>
+			<div class="header_banner col-md-4 hidden-xs hidden-sm">
+				<span class="heading-block activity_welcome pull-right">Welcome, Smith<div class="logout"></div></span>
+			</div>
+			<!-- <div class="heading-block activity_welcome col-md-4 hidden-xs hidden-sm">Welcome, Smith<div class="logout"></div></div> -->
+		</div>
+	</div>
+
+	<!--  Main Content -->
+	
+	<div class="container dashboard">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12 search_Candidate">
+				<div class="row">
+					<input type="text" name="search" placeholder="Search candidates" class="dashboard_search col-md-6 col-sm-12 col-xs-12">
+					<button class="add_new_hiring col-md-6 col-sm-12 col-xs-12 pull-right"><img src="../../assets/dashboard/add_b_icon.png"> Add New Hiring</button>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="row hidden-sm hidden-xs">
+			<table class="table">
+				<thead>
+					<tr>
+						<td>ID Name</td>
+						<td></td>
+						<td>ID</td>
+						<td>No of<br>Position</td>
+						<td>Skill Sets</td>
+						<td>Created Date</td>
+						<td>Received<br>Profile</td>
+						<td>Interview<br>Completed</td>
+						<td>Yet to<br>Sche. Interview</td>
+						<td></td>
+						<td></td>
+					</tr>
+				</thead>
+				<tbody id="mytable"></tbody>
+			</table>
+		</div>
+		<div class="visible-sm visible-xs mobile_view">
+			<!-- <div class="row col-sm-12 col-xs-12"  id="id_name">
+				<div class="col-sm-6 col-xs-6">ID Name : </div>
+			</div>
+			<div class="row col-sm-12 col-xs-12" id="id">
+				<div class="col-sm-6 col-xs-6">ID : </div>
+			</div>
+			<div class="row col-sm-12 col-xs-12" id="no_of_positions">
+				<div class="col-sm-6 col-xs-6">No of Positions : </div>
+			</div>
+			<div class="row col-sm-12 col-xs-12" id="skill_sets">
+				<div class="col-sm-6 col-xs-6">Skill sets : </div>
+			</div>
+			<div class="row col-sm-12 col-xs-12" id="cr_date">
+				<div class="col-sm-6 col-xs-6">Created date : </div>
+			</div>
+			<div class="row col-sm-12 col-xs-12" id="rec_profile">
+				<div class="col-sm-6 col-xs-6">Received Profile : </div>
+			</div>
+			<div class="row col-sm-12 col-xs-12" id="com_profile">
+				<div class="col-sm-6 col-xs-6">Interview Completed : </div>
+			</div>
+			<div class="row col-sm-12 col-xs-12" id="schedule">
+				<div class="col-sm-6 col-xs-6">yet to Schedule Interview : </div>
+			</div> -->
+			<div class="row col-sm-12 col-xs-12">
+				<button class="view_profile col-sm-6 col-xs-6"><img src="../../assets/dashboard/view_icon.png">View Profile</button>
+				<button class="add_profile col-sm-6 col-xs-6"><img src="../../assets/dashboard/add_s_icon.png">Add Profile</button>
+				<!-- <div class="view_profile col-sm-6 col-xs-6"><div class="view_icon"></div><div>View Profile</div></div> -->
+				<!-- <div class="add_profile col-sm-6 col-xs-6"><span class="glyphicon glyphicon-plus"></span>Add Profile</div> -->
+			</div>
+    </div>
+    
+    <ul>
+      <li *ngFor="let item of emp.data; let i = index">
+        {{i}} {{item}}
+      </li>
+    </ul>
+<!-- 
+<h1>Reee {{emp.data}}</h1> -->
+
+
+
+
+
+
+
+
+
+
+
+		<ul id="pagination_demo" class="pagination-lg pull-right">
+			<li class="first disabled button"><< First</li>
+			<li class="prev disabled button">< Prev</li>
+			<li class="next active button">Next ></li>
+			<li class="last active button">Last >></li>
+		</ul>		  
+	</div>
+	
+	<!--  Footer -->
+	<div class="container-fluid footer">
+		<div class="row">
+			<div class="footer-block footer_txt">Copyright © 2018 CSSCROP. All rights reserved. Terms of Use | Privacy Policy</div>
+		</div>
+	</div>
+
+</div>
